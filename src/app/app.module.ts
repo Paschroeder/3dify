@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { PrintableListComponent } from './printable-list/printable-list.component';
 import { PrintableFormComponent } from './printable-form/printable-form.component';
 import {FormsModule} from "@angular/forms";
+import { FilamentFormComponent } from './filament/filament-form/filament-form.component';
+import { FilamentListComponent } from './filament/filament-list/filament-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrintableListComponent,
-    PrintableFormComponent
+    PrintableFormComponent,
+    FilamentFormComponent,
+    FilamentListComponent
   ],
   imports: [
     BrowserModule,

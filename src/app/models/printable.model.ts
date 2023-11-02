@@ -1,3 +1,5 @@
+import {Filament} from "./filament.model";
+
 export interface Printable {
   id: number
   name: string
@@ -9,5 +11,6 @@ export interface Printable {
   filamentLength: number
   filamentCosts: number
   powerCosts: number
+  filament: Filament
 
 }

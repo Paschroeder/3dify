@@ -1,0 +1,30 @@
+<div class="container">
+
+  <div class="card mt-3">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Create new Filament</h2>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col col-md-6">
+        <input class="form-control" [(ngModel)]="newManufacturer" placeholder="Manufacturer">
+      </div>
+      <div class="col col-md-4">
+        <input class="form-control" [(ngModel)]="newMaterial" placeholder="Material">
+      </div>
+      <div class="col col-md-2">
+        <button class="btn btn-primary w-100" (click)="addFilament()">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center mt-5">Filaments</h2>
+  <ul class="list-group mt-3">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let filament of filaments; index as i">
+      {{i+1}} {{filament.manufacturer}} {{filament.material}}
+
+    </li>
+  </ul>
+</div>
